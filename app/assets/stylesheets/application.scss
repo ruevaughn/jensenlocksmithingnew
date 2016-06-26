@@ -1,0 +1,5 @@
+// remove all the *= require_self and *= require_tree . statements from the sass file. Instead, use @import to import Sass files.
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
