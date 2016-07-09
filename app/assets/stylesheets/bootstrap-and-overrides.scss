@@ -1,0 +1,15 @@
+/* custom style for navbar */
+
+.navbar-nav > li > a, {
+  padding-top:30px !important;
+  padding-bottom:0 !important;
+  height: 76px;
+}
+.navbar {min-height:28px !important;}
+
+.footer-bottom {
+  background: #25292C;
+  color: #888;
+  line-height: 30px;
+  padding: 15px;
+}

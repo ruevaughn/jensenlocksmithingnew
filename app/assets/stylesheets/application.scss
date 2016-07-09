@@ -5,12 +5,19 @@
 @import "bootstrap";
 @import "bootstrap-social";
 @import "font-awesome";
+@import "bootstrap-and-overrides";
 
-/* custom style for navbar */
-
-.navbar-nav > li > a, {
-  padding-top:30px !important;
-  padding-bottom:0 !important;
-  height: 76px;
+.app-container{
+  max-width: 1280px;
+  margin: 0 auto;
 }
-.navbar {min-height:28px !important;}
+
+.page-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 979px) {
+  .page-container {
+    padding-top: 0px;
+  }
+}
