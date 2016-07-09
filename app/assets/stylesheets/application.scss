@@ -17,6 +17,13 @@ body{
   color: #F7F7F7 !important;
 }
 
+.locksmith-logo {
+  padding: 0;
+  margin: 0;
+}
+
+// Containers
+
 .app-container{
   max-width: 1280px;
   margin: 0 auto;
@@ -26,14 +33,24 @@ body{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 @media (max-width: 979px) {
   .page-container {
     padding-top: 0px;
   }
 }
 
+// Main Page
+
 .main-text {
   text-align: justify;
+  // padding-top: 15px;
+}
+
+@media (max-width: 979px) {
+  .main-text {
+    padding-top: 15px;
+  }
 }
 
 .team-image {

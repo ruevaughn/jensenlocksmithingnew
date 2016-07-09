@@ -1,7 +1,13 @@
 /* custom style for navbar */
 
-.navbar-nav > li > a, {
+.navbar-nav > li > a {
   padding-top:30px !important;
+  padding-bottom:0 !important;
+  height: 76px;
+}
+
+.navbar-brand {
+  padding-top:15px !important; // Adjust this to adjust how high locksmith image logo is from the top
   padding-bottom:0 !important;
   height: 76px;
 }
