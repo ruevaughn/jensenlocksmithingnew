@@ -15,25 +15,67 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse-mobile">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Residential</a></li>
+
+        <li class="active">
+          <%= link_to "Home", home_path %>
+          <span class="sr-only">(current)</span>
+        </li>
+
+        <li>
+          <%= link_to "Residential", residential_path %>
+        </li>
+
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Automotive <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Automotive
+            <span class="caret"></span>
+          </a>
           <ul class="dropdown-menu">
-            <li><a href="#">St. George | Washington</a></li>
+            <li>
+              <%= link_to "General Automotive", automotive_st_george_path %>
+            </li>
+
             <li role="separator" class="divider"></li>
-            <li><a href="#">Hurricane               | La Verkin</a></li>
+
+            <li>
+              <%= link_to "St. George | Washington", automotive_st_george_path %>
+            </li>
+
             <li role="separator" class="divider"></li>
-            <li><a href="#">Sprindale  | Zion National Park</a></li>
+
+            <li>
+              <%= link_to "Hurricane | La Verkin", automotive_hurricane_path %>
+            </li>
+
             <li role="separator" class="divider"></li>
+
+            <li>
+              <%= link_to "Springdale | Zion National Park", automotive_springdale_path %>
+            </li>
+
+            <li role="separator" class="divider">
+              <%= link_to "Kanab | And Surrounding Areas", automotive_kanab_path%>
+            </li>
             <li><a href="#">Kanab      | And Surrounding Areas</a></li>
           </ul>
         </li>
-        <li><a href="#">Commercial</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Reviews</a></li>
-        <li><a href="#">Contact Us</a></li>
+
+        <li>
+          <%= link_to "Commercial", commercial_path %>
+        </li>
+
+        <li>
+          <%= link_to "Blog", blog_path %>
+        </li>
+
+        <li>
+          <%= link_to "Reviews", reviews_path %>
+        </li>
+
+        <li>
+          <%= link_to "Contact Us", contact_path %>
+        </li>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
         <li><a class="call-us">Call Us: 435-319-0361</a></li>
       </ul>
