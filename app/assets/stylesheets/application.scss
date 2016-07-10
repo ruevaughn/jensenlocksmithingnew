@@ -40,6 +40,7 @@ body{
   }
 }
 
+
 // Main Page
 
 .main-text {
@@ -56,6 +57,7 @@ body{
 .team-image {
   width: 90%;
   height: 90%;
+  border-radius: 6px;
 }
 
 .information {
@@ -102,8 +104,10 @@ body{
       font-size: 30px;
     }
 
+// Jumbotron buttons
+
   .jumbotron {
-    min-height: 500px;
+    min-height: 650px;
     -webkit-transition: all 300ms ease-in;
 
     .btn-primary{
@@ -118,8 +122,19 @@ body{
     .btn-primary {
       background-color: #4A732F;
 
+      }
     }
   }
-}
+
+  .home-button-text{
+    min-height: 260px;
+    margin-top: 20px;
+  }
+
+  .home-button-image{
+    width: 319px;
+    height: 158px;
+    border-radius: 10px;
+  }
 
 
