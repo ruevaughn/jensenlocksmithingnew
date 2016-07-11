@@ -9,14 +9,13 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#"><%= image_tag("logo.png", class: "locksmith-logo")%></a>
-      <!-- image_tag("logo.png") -->
     </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse-mobile">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav" id="main-navbar">
 
-        <li class="active">
+        <!-- <li class="active"> -->
+        <li>
           <%= link_to "Home", home_path %>
           <span class="sr-only">(current)</span>
         </li>
@@ -31,7 +30,7 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <%= link_to "General Automotive", automotive_st_george_path %>
+              <%= link_to "General Automotive", automotive_path %>
             </li>
 
             <li role="separator" class="divider"></li>

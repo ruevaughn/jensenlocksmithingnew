@@ -12,15 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
 
-$('.navbar li').click(function(e) {
-    $('.navbar li.active').removeClass('active');
-    var $this = $(this);
-    if (!$this.hasClass('active')) {
-        $this.addClass('active');
-    }
-    e.preventDefault();
+// Check if no actives are set, then set home if that is the case
+
+$(document).ready(function() {
+  $(function() {
+    $('ul.nav li.active').removeClass('active');
+    return $("ul.nav a[href$='" + window.location.pathname + "']").parents('li').addClass('active');
+  });
 });
