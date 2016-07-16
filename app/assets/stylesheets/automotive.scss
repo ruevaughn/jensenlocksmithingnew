@@ -2,6 +2,14 @@
   width: 254px;
   height: 280px;
   border-radius: 50%;
+  margin-bottom: 3px;
+}
+
+@media (max-width: 979px) {
+  .image-automotive {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .automotive-lower-text{
@@ -12,6 +20,19 @@
   border-radius: 6px;
 }
 
+
+@media (max-width: 979px) {
+  .locked-out {
+    width: 70%;
+    height: 50%;
+  }
+}
+
 .automotive-header{
   margin-bottom: 30px;
+  text-align: justify;
+}
+
+.call-now-button{
+  margin-bottom: 10px;
 }
