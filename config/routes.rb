@@ -15,5 +15,7 @@ Rails.application.routes.draw do
   get "residential", to: "pages#residential", as: "residential"
   get "reviews", to: "pages#reviews", as: "reviews"
 
+  put "contact_form", to: "pages#contact_form"
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

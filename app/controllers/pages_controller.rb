@@ -4,4 +4,8 @@ class PagesController < ApplicationController
 
   def residential
   end
+
+  def contact_form
+    puts params
+  end
 end
