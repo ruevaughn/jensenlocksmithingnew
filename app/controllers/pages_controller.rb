@@ -5,7 +5,13 @@ class PagesController < ApplicationController
   def residential
   end
 
-  def contact_form
-    puts params
+  def contact
   end
+
+  def contact_form
+
+    ContactFormMailer.contact_form(params).deliver
+    flash[:notice] = "Your message has been sent successfully"
+    render "contact"
+
 end
