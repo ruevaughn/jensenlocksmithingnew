@@ -9,9 +9,8 @@ class PagesController < ApplicationController
   end
 
   def contact_form
-
     ContactFormMailer.contact_form(params).deliver
     flash[:notice] = "Your message has been sent successfully"
     render "contact"
-
+  end
 end

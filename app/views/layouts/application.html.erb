@@ -13,6 +13,9 @@
   </head>
 
   <body>
+    <% if flash[:notice] %>
+      <%= flash[:notice] %>
+    <% end %>
     <div class="app-container">
       <%= render "layouts/header" %>
       <div class="page-container">
