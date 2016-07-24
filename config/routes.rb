@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :admins
   root 'pages#home'
 
   get "automotive", to: "pages#automotive", as: "automotive"
