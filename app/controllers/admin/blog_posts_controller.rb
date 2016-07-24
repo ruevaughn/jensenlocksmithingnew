@@ -19,6 +19,11 @@ class Admin::BlogPostsController < ApplicationController
 
   end
 
+  def destroy
+    BlogPost.find(params[:id]).destroy
+    redirect_to admin_blog_posts_path
+  end
+
   private
 
   def blog_post_params

@@ -1,3 +1,25 @@
 <% breadcrumb :posts %>
 
 <%= link_to "Create New Post", new_admin_blog_post_path, class: "btn btn-default" %>
+
+<table class="table table-striped">
+  <tr>
+    <th>Subject</th>
+    <th></th>
+  </tr>
+  <% @blog_posts.each do |blog_post| %>
+    <tr>
+      <td>
+        <%= blog_post.header %>
+      </td>
+      <td style="text-align: right; align: right;">
+        <%= link_to edit_admin_blog_post_path(blog_post), class: "btn btn-default" do %>
+          <span class="glyphicon glyphicon-edit" aria-hidden="true"> Edit</span>
+        <% end %>
+        <%= link_to(admin_blog_post_path(blog_post), {method: :delete, data: {confirm: "Are you sure you want to delete this Blog Post? This action cannot be undone"}, class: "btn btn-default"}) do %>
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"> Remove</span>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>
