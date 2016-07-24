@@ -20,5 +20,9 @@ Rails.application.routes.draw do
 
   get "admin_panel", to: "admin_panel#dashboard", as: "admin_panel"
 
+  namespace :admin do
+    resources :blog_posts
+  end
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
