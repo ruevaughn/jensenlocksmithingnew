@@ -30,6 +30,7 @@ gem 'bootstrap-social-rails', '~> 4.12' # https://lipis.github.io/bootstrap-soci
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 
 gem 'devise', '~> 4.2'
+gem 'gretel', '~> 3.0', '>= 3.0.8' # Breadcrumbs
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
