@@ -14,12 +14,21 @@
 
   <body>
     <!-- Devise -->
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <%= notice %></p>
+
 
     <% if flash[:notice] %>
-      <%= flash[:notice] %>
+      <p class="bg-primary">
+        <%= flash[:notice] %>
+      </p>
     <% end %>
+
+    <% if flash[:alert] %>
+      <p class="bg-danger">
+       <%= flash[:alert] %>
+      </p>
+    <% end %>
+
     <div class="app-container">
       <%= render "layouts/header" %>
       <div class="page-container">
