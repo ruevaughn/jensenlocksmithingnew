@@ -6,6 +6,11 @@ crumb :posts do
   link "Blog Posts", admin_blog_posts_path
 end
 
+crumb :new_post do
+  link "Blog Posts", admin_blog_posts_path
+  link "New Blog Post", new_admin_blog_post_path
+end
+
 
 # crumb :projects do
 #   link "Projects", projects_path

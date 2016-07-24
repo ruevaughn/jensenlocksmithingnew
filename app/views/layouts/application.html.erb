@@ -27,10 +27,10 @@
 
     <div class="app-container">
       <%= render "layouts/header" %>
+      <div class="page-container">
       <% if admin_signed_in? %>
         <%= render "admin/layouts/admin_header" %>
       <% end %>
-      <div class="page-container">
         <%= yield %>
       </div>
       <%= render "layouts/footer" %>
