@@ -18,5 +18,7 @@ Rails.application.routes.draw do
 
   put "contact_form", to: "pages#contact_form"
 
+  get "admin_panel", to: "admin_panel#dashboard", as: "admin_panel"
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
