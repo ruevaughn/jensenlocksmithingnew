@@ -13,4 +13,8 @@ class PagesController < ApplicationController
     flash[:notice] = "Your message has been sent successfully"
     render "contact"
   end
+
+  def blog
+    @blog_posts = BlogPost.all
+  end
 end
