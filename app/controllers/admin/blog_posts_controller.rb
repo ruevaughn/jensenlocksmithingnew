@@ -2,11 +2,25 @@ class Admin::BlogPostsController < ApplicationController
   before_action :authenticate_admin!
 
   def index
-    @blog_posts = BlogPost.all
+    @blog_posts = BlogPost.all.order(created_at: "desc")
   end
 
   def new
     @blog_post = BlogPost.new
+  end
+
+  def edit
+    @blog_post = BlogPost.find(params[:id])
+  end
+
+  def update
+    @blog_post = BlogPost.find(params[:id])
+
+    if @blog_post.update_attributes(blog_post_params)
+      flash[:notice] = "Blog Post successfully updated"
+      redirect_to admin_blog_posts_path
+    else
+    end
   end
 
   def create

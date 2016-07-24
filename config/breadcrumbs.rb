@@ -6,6 +6,10 @@ crumb :admin_panel do
   link "Admin Panel", admin_panel_path
 end
 
+crumb :edit_post do |post|
+  link "Edit Post", edit_admin_blog_post_path(post)
+end
+
 crumb :posts do
   link "Blog Posts", admin_blog_posts_path
 end

@@ -1,0 +1,15 @@
+<% breadcrumb :edit_post, @blog_post %>
+
+<%= form_for @blog_post, url: admin_blog_post_path(@blog_post), method: :put do |f| %>
+  <div class="form-group">
+    <%= f.label :header %>
+    <%= f.text_field :header, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :body %>
+    <%= f.text_area :body, rows: 20, class: "form-control" %>
+  </div>
+
+  <%= f.submit "Submit", class: "btn btn-default"%>
+<% end %>
