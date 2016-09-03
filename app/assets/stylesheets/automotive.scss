@@ -12,6 +12,11 @@
   }
 }
 
+@media (max-width: 500px) {
+  .automotive-lower-text p{
+    font-size: 14px !important;
+  }
+}
 .automotive-lower-text{
   // min-height: 780px;
 }
