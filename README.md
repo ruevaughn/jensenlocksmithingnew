@@ -1,6 +1,7 @@
 # README
 
 heroku git:remote -a jensenlocksmith
+git push heroku master
 
 Ruby 2.3.1
 rbenv install 2.3.1 
