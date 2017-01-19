@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   get "residential", to: "pages#residential", as: "residential"
   get "reviews", to: "pages#reviews", as: "reviews"
 
+  # Old Website
+  get "stgeorge", to: "pages#automotive_st_george"
+
   put "contact_form", to: "pages#contact_form"
 
   get "admin_panel", to: "admin_panel#dashboard", as: "admin_panel"
