@@ -12,9 +12,15 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .automotive-lower-text p{
     font-size: 14px !important;
+  }
+
+  .automotive-bottom-image-larger{
+    width: 250px !important;
+    height: 178px !important;
+
   }
 }
 .automotive-lower-text{
