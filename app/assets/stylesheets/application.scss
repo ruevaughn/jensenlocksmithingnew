@@ -107,11 +107,11 @@ body{
     padding-right: 5px;
   }
 
-    h1{
-      font-size: 30px;
-    }
+  h1 {
+    font-size: 30px;
+  }
 
-// Jumbotron buttons
+  // Jumbotron buttons
 
   .jumbotron {
     min-height: 650px;
@@ -132,6 +132,24 @@ body{
       }
     }
   }
+
+  @media screen and (max-width: 480px) {
+    .home-button-image{
+      width: 240px !important;
+      height: 130px !important;
+    }
+
+    .home-button-text{
+      font-size: 18px !important;
+      min-height: 100px !important;
+    }
+
+    .jumbotron{
+      min-height: 400px !important;
+    }
+  }
+
+
 
   .home-button-text{
     min-height: 260px;
