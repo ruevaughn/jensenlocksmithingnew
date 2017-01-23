@@ -6,6 +6,10 @@ crumb :admin_panel do
   link "Admin Panel", admin_panel_path
 end
 
+crumb :admin_automotive_page do
+  link "Automotive Page", admin_automotive_path
+end
+
 crumb :edit_post do |post|
   link "Edit Post", edit_admin_blog_post_path(post)
 end
@@ -17,6 +21,11 @@ end
 crumb :new_post do
   parent :posts
   link "New Blog Post", new_admin_blog_post_path
+end
+
+crumb :page_content_edit do |content|
+  parent "admin_#{content.page}_page".to_sym
+  link "Edit Content", edit_admin_page_content_path(content)
 end
 
 
