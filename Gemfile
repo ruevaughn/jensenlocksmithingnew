@@ -32,6 +32,8 @@ gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'devise', '~> 4.2'
 gem 'gretel', '~> 3.0', '>= 3.0.8' # Breadcrumbs
 
+gem 'annotate', '~> 2.7', '>= 2.7.1' # Annotates Rails/ActiveRecord Models, routes, fixtures, and others based on the database schema.
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

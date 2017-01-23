@@ -7,6 +7,9 @@ Ruby 2.3.1
 rbenv install 2.3.1 
 rbenv local 2.3.1
 
+Annotation 
+--
+annotate --exclude tests,fixtures,factories,serializers
 
 Install
 --
