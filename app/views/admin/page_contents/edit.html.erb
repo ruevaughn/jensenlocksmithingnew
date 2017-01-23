@@ -1,0 +1,5 @@
+<% breadcrumb :page_content_edit, @page_content %>
+
+<%= form_for [:admin, @page_content] do |f| %>
+  <%= f.text_area :body %>
+<% end %>

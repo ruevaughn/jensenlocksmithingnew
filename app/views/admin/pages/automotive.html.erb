@@ -1,0 +1,8 @@
+<% breadcrumb :admin_automotive_page %>
+
+<% @page_contents.each do |content| %>
+  <h1><%= content.content_name %></h1>
+  <p><%= link_to "Edit", edit_admin_page_content_path(content) %></p>
+  <%= content.body %>
+  <hr>
+<% end %>
