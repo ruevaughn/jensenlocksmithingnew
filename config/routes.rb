@@ -18,10 +18,17 @@ Rails.application.routes.draw do
 
   # Old Website
   get "stgeorge", to: "pages#automotive_st_george"
+  get "StGeorge", to: "pages#automotive_st_george"
   get "hurricane", to: "pages#automotive_hurricane"
+  get "Hurricane", to: "pages#automotive_hurricane"
   get "kanab", to: "pages#automotive_kanab"
+  get "Kanab", to: "pages#automotive_kanab"
   get "springdale", to: "pages#automotive_springdale"
+  get "SpringDale", to: "pages#automotive_springdale"
+  get "Springdale", to: "pages#automotive_springdale"
   get "laverkin", to: "pages#automotive_hurricane"
+  get "LaVerkin", to: "pages#automotive_hurricane"
+  get "Laverkin", to: "pages#automotive_hurricane"
 
   put "contact_form", to: "pages#contact_form"
 
