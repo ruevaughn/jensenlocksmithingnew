@@ -4,6 +4,13 @@
   border-radius: 50%;
 }
 
+@media (max-width: 480px) {
+  .image-residential {
+    width: 176px  !important;
+    height: 210px !important;
+  }
+}
+
 // .panel{
 //   .panel-primary{
 //     .panel-heading{
