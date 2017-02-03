@@ -1,0 +1,9 @@
+<% breadcrumb :page_content_edit, @page_content %>
+
+<%= form_for [:admin, @page_content] do |f| %>
+  <div class="form-group">
+    <%= f.text_area :body, class: "form-control" %>
+  </div>
+
+  <%= f.submit class: "btn btn-default" %>
+<% end %>
