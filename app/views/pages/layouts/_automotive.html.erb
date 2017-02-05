@@ -1,26 +1,24 @@
 <div class="row" style="margin-top: 20px">
   <div class="col-md-offset-3 col-md-5">
     <div class="jumbotron automotive-lower-text">
-      <h2>Lost Key?</h2>
+      <h2><%= @bottom_text1.title %></h2>
       <p>
-        Did you try to get into your car only to find out that you lost your keys? Uh-Oh! Jensen Locksmithing can help with that too. We can cut new keys and program them to the vehicle too, if needed.
+        <%= simple_format(@bottom_text1.body) %>
       </p>
-      <h2>Car replacement Key</h2>
+
+      <h2><%=@bottom_text2.title %></h2>
       <p>
-        Many vehicles now require programmable "chipped keys." These keys require programming to be able to communicate with your car in order to start it. We have the equipment and knowledge neccessary to do that as well. We will come right to your vehicle and take care of it on the spot.
+        <%= simple_format(@bottom_text2.body) %>
       </p>
       <p><a class="btn btn-primary btn-lg" href="#" role="button">Schedule Now</a></p>
     </div>
   </div>
+
   <div class="col-md-4">
     <div class="jumbotron automotive-lower-text">
-      <h3>Why You Need a Spare Car Key</h3>
+      <h3><%= @bottom_text3.title %></h3>
       <p>
-        Do you only have one key for your vehicle? What if you lose that one?  We can help! Most vehicles, especially model years 2000 and newer, have keys with electronic chips built in.
-
-      </p>
-      <p>
-        These chips are programmed to "talk" to your car and let it know this is a valid key and can start the car.  The upside to these keys - much better security.  The downside - they can be expensive!  If you lose that last key, it adds a lot to the expense of producing a new key.  It could as much as double the cost.
+        <%= simple_format(@bottom_text3.body) %>
       </p>
       <p><a class="btn btn-primary btn-lg" href="#" role="button">Schedule Now</a></p>
     </div>

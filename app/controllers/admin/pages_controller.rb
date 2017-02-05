@@ -1,7 +1,7 @@
-class Admin::PagesController < ApplicationController
+class Admin::PagesController < AdminPanelController
 
   def automotive
-    @page_contents = PageContent.where(page: 'automotive') 
+    @page_contents = PageContent.where(page: 'automotive')
   end
 
 end

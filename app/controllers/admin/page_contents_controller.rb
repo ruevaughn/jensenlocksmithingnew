@@ -1,4 +1,4 @@
-class Admin::PageContentsController < ApplicationController
+class Admin::PageContentsController < AdminPanelController
 
   def edit
     @page_content = PageContent.find(params[:id])
@@ -14,7 +14,7 @@ class Admin::PageContentsController < ApplicationController
 
       redirect_to "/admin/#{@page_content.page}"
     else
-      flash[:notice] = "There was a problem, contact Chase :)" 
+      flash[:notice] = "There was a problem, contact Chase :)"
       render @page_content
     end
     # TODO: Update, re-render etc.

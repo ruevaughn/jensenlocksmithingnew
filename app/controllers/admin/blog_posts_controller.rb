@@ -1,4 +1,4 @@
-class Admin::BlogPostsController < ApplicationController
+class Admin::BlogPostsController < AdminPanelController
   before_action :authenticate_admin!
 
   def index

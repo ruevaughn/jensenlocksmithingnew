@@ -1,7 +1,15 @@
 <% breadcrumb :page_content_edit, @page_content %>
 
 <%= form_for [:admin, @page_content] do |f| %>
+  <% if @page_content.title %>
+    <div class="form-group">
+      <%= f.label :title %>
+      <%= f.text_field :title, class: "form-control" %>
+    </div>
+  <% end %>
+
   <div class="form-group">
+    <%= f.label :body %>
     <%= f.text_area :body, class: "form-control" %>
   </div>
 

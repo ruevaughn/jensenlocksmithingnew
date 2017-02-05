@@ -19,3 +19,24 @@ PageContent.create({
   content_name: 'Main Text',
   body: "Have you locked your keys in your car? Have you lost your keys? No need to worry, put a smile on your face. At Jensen Locksmithing we help people out with automotive lock and/or key problems. Whether it’s unlocking your car or replacing lost or broken keys and remotes, we've got you covered at an affordable rate.\n We want to help if anything like this occurs. With technology on the rise today, automotive technology is increasing as well.\n We stay up to date with this automotive technology, and we can help you out with our state of the art equipment. Avoid towing costs and high dealership prices.\n"
 })
+
+PageContent.create({
+  page: 'automotive',
+  content_name: 'Bottom Text 1',
+  title: "Lost Key?",
+  body: "Did you try to get into your car only to find out that you lost your keys? Uh-Oh! Jensen Locksmithing can help with that too. We can cut new keys and program them to the vehicle too, if needed."
+})
+
+PageContent.create({
+  page: 'automotive',
+  content_name: 'Bottom Text 2',
+  title: "Car replacement Key",
+  body: "Many vehicles now require programmable 'chipped keys.' These keys require programming to be able to communicate with your car in order to start it. We have the equipment and knowledge neccessary to do that as well. We will come right to your vehicle and take care of it on the spot."
+})
+
+PageContent.create({
+  page: 'automotive',
+  content_name: 'Bottom Text 3',
+  title: "Why You Need a Spare Car Key",
+  body: "Do you only have one key for your vehicle? What if you lose that one? We can help! Most vehicles, especially model years 2000 and newer, have keys with electronic chips built in.\n\n These chips are programmed to 'talk' to your car and let it know this is a valid key and can start the car. The upside to these keys - much better security. The downside - they can be expensive! If you lose that last key, it adds a lot to the expense of producing a new key. It could as much as double the cost."
+})
