@@ -1,13 +1,12 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row" style="padding-bottom: 6px">
     <div class="col-md-4 information">
       <a href="tel:435.319.0361" id="phone-click-1">
         <button type="button" class="btn btn-default btn-lg" >
           <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Call Now
         </button>
       </a>
-      <h3>We're Available 24/7</h2>
-      <h1>435-319-0361</h1>
+      <%= image_tag("key_call.png", style: "height: 80%; width: 80%", class: "image-responsive key-call center-block") %>
     </div>
 
     <div class="col-md-4">
@@ -22,7 +21,6 @@
       </div>
     </div>
   </div>
-  <hr>
 
   <div class="row service-types">
     <div onclick="location.href='residential'" class="col-md-4">
