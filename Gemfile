@@ -34,6 +34,8 @@ gem 'gretel', '~> 3.0', '>= 3.0.8' # Breadcrumbs
 
 gem 'annotate', '~> 2.7', '>= 2.7.1' # Annotates Rails/ActiveRecord Models, routes, fixtures, and others based on the database schema.
 
+gem 'sitemap_generator', '~> 5.2' # SitemapGenerator is a framework-agnostic XML Sitemap generator written in Ruby with automatic Rails integration. It supports Video, News, Image, Geo, Mobile, PageMap and Alternate Links sitemap extensions and includes Rake tasks for managing your sitemaps, as well as many other great features.
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
