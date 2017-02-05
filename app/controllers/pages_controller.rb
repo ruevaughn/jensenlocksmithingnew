@@ -17,4 +17,8 @@ class PagesController < ApplicationController
   def blog
     @blog_posts = BlogPost.all
   end
+
+  def automotive
+    @main_text = PageContent.where(page: 'automotive', content_name: 'Main Text').first
+  end
 end
