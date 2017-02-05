@@ -21,7 +21,7 @@ class Admin::PageContentsController < AdminPanelController
   end
 
   def page_content_params
-    params.require(:page_content).permit(:body)
+    params.require(:page_content).permit(:body, :title)
   end
 
 
