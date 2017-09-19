@@ -31,7 +31,7 @@ class PagesController < ApplicationController
   end
 
   def blog
-    @blog_posts = BlogPost.all
+    @blog_posts = BlogPost.all.order(created_at: "desc")
   end
 
   def automotive
@@ -46,7 +46,7 @@ class PagesController < ApplicationController
     @page_title       = 'Locked Out? 24/7 Fast Locksmith Serving St. George, Santa Clara & more'
     @page_keywords    = 'locked out, locksmith, fast, cheap, rekey, 24/7, St. George, Hurricane, Springdale'
     @page_description = 'Locked out of your house or car? Need a New Car Remote? We are a fast, afforable Locksmithing company serving St. George & Surrounding Areas'
-    
+
     @bottom_text1 = PageContent.where(page: 'automotive', content_name: "Bottom Text 1").first
     @bottom_text2 = PageContent.where(page: 'automotive', content_name: "Bottom Text 2").first
     @bottom_text3 = PageContent.where(page: 'automotive', content_name: "Bottom Text 3").first
@@ -56,7 +56,7 @@ class PagesController < ApplicationController
     @page_title       = 'Locked Out? 24/7 Locksmith Serving Virgin, Springdale, Zion & more'
     @page_keywords    = 'locked out, locksmith, fast, cheap, rekey, 24/7, St. George, Hurricane, Springdale'
     @page_description = 'Locked out of your house or car? Need a New Car Remote?? We are a fast, afforable Locksmithing company serving Sprindale & Surrounding Areas'
-    
+
     @bottom_text1 = PageContent.where(page: 'automotive', content_name: "Bottom Text 1").first
     @bottom_text2 = PageContent.where(page: 'automotive', content_name: "Bottom Text 2").first
     @bottom_text3 = PageContent.where(page: 'automotive', content_name: "Bottom Text 3").first
@@ -66,7 +66,7 @@ class PagesController < ApplicationController
     @page_title       = 'Locked Out? 24/7 Locksmith Serving Hurricane, Laverkin, Leeds & more'
     @page_keywords    = 'locked out, locksmith, automotive, 24/7, St. George, rekey, hurricane, laverkin, toquerville'
     @page_description = 'Locked out of your house or car? Need a new Car Remote? We are a fast, afforable Locksmithing company serving Hurricane & Surrounding Areas'
-    
+
     @bottom_text1 = PageContent.where(page: 'automotive', content_name: "Bottom Text 1").first
     @bottom_text2 = PageContent.where(page: 'automotive', content_name: "Bottom Text 2").first
     @bottom_text3 = PageContent.where(page: 'automotive', content_name: "Bottom Text 3").first
