@@ -8,6 +8,7 @@
 
 Admin.delete_all
 Admin.create(email: 'soccerchase@gmail.com', password: 'password', password_confirmation: 'password')
+Admin.create(email: 'tamra.cooper72@gmail.com', password: 'password', password_confirmation: 'password')
 
 # t.string :page
 # t.string :content_name
