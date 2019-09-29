@@ -4,7 +4,7 @@ class CreatePageImages < ActiveRecord::Migration[5.0]
       t.string :page
       t.string :name
       t.string :alt_text
-      t.string :image_location 
+      t.string :image_url
       t.text :description
       t.boolean :default
 

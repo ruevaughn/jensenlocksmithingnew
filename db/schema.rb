@@ -49,11 +49,11 @@ ActiveRecord::Schema.define(version: 20190929015632) do
     t.string   "page"
     t.string   "name"
     t.string   "alt_text"
-    t.string   "image_location"
+    t.string   "image_url"
     t.text     "description"
     t.boolean  "default"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end
