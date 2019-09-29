@@ -15,7 +15,9 @@ Install
 --
 http://postgresapp.com/
 gem install pg -v '0.18.4' -- --with-pg-config="/Applications/Postgres.app/Contents/Versions/latest/bin/pg_config"
-bundle
+
+gem install bundler -v "~>1.0"
+bundle _1.17.3_
 
 DB
 -- 
