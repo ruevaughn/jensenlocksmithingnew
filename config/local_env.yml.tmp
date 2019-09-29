@@ -8,3 +8,6 @@
 
 GMAIL_USERNAME: "fillmein"
 GMAIL_PASSWORD: "fillmein"
+CLOUDINARY_NAME: "fillmein"
+CLOUDINARY_API_KEY: "fillmein"
+CLOUDINARY_API_SECRET: "fillmein"
