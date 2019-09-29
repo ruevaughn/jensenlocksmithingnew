@@ -16,3 +16,9 @@ Install
 http://postgresapp.com/
 gem install pg -v '0.18.4' -- --with-pg-config="/Applications/Postgres.app/Contents/Versions/latest/bin/pg_config"
 bundle
+
+DB
+-- 
+bin/rails db:create
+bin/rails db:migrate
+bin/rails db:seed
