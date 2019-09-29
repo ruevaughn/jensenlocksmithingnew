@@ -14,4 +14,7 @@
 #
 
 class PageImage < ApplicationRecord
+  def self.automotive_side_2
+    where(name: 'automotive-side-2', default: true).last
+  end
 end

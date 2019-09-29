@@ -53,7 +53,7 @@ puts "Creating Page Images"
 PageImage.create!({
   page: "automotive",
   name: "automotive-side-2",
-  url: "https://res.cloudinary.com/dtvsv3vni/image/upload/v1569734998/r9tgbgae47m7ktb2f9p2.jpg",
+  image_url: "https://res.cloudinary.com/dtvsv3vni/image/upload/v1569734998/r9tgbgae47m7ktb2f9p2.jpg",
   description: "Jensen Locksmithing Van",
   alt_text: "Jensen Locksmithing Van",
   default: true
