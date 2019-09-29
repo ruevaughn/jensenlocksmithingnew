@@ -24,3 +24,5 @@
 # TODO: FIGURE OUT ENV VARIABLES
 
 config/local_env.yml
+
+.DS_Store
