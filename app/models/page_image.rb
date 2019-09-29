@@ -13,5 +13,5 @@
 #  updated_at    :datetime         not null
 #
 
-class WebsiteImage < ApplicationRecord
+class PageImage < ApplicationRecord
 end
