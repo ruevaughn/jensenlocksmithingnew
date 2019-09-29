@@ -1,4 +1,4 @@
-# README
+# Jensen Locksmithing Web App
 
 heroku git:remote -a jensenlocksmith
 git push heroku master
@@ -11,7 +11,7 @@ Annotation
 --
 annotate --exclude tests,fixtures,factories,serializers
 
-Install
+## Install
 --
 http://postgresapp.com/
 gem install pg -v '0.18.4' -- --with-pg-config="/Applications/Postgres.app/Contents/Versions/latest/bin/pg_config"
@@ -19,8 +19,12 @@ gem install pg -v '0.18.4' -- --with-pg-config="/Applications/Postgres.app/Conte
 gem install bundler -v "~>1.0"
 bundle _1.17.3_
 
-DB
+## DB
 -- 
 bin/rails db:create
 bin/rails db:migrate
 bin/rails db:seed
+
+##ENV
+--
+copy local_env.yml.tmp to local_env.yml
