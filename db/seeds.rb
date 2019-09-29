@@ -6,9 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+puts "Seeding DB"
+puts "-"*80
+puts "Cleaning up Database"
 Admin.delete_all
 Admin.create(email: 'soccerchase@gmail.com', password: 'password', password_confirmation: 'password')
 Admin.create(email: 'tamra.cooper72@gmail.com', password: 'password', password_confirmation: 'password')
+puts "Admin Users Created"
 
 # t.string :page
 # t.string :content_name
@@ -41,3 +45,7 @@ PageContent.create({
   title: "Why You Need a Spare Car Key",
   body: "Do you only have one key for your vehicle? What if you lose that one? We can help! Most vehicles, especially model years 2000 and newer, have keys with electronic chips built in.\n\n These chips are programmed to 'talk' to your car and let it know this is a valid key and can start the car. The upside to these keys - much better security. The downside - they can be expensive! If you lose that last key, it adds a lot to the expense of producing a new key. It could as much as double the cost."
 })
+
+puts "Page Content Created"
+puts "-"*80
+puts "Done"
