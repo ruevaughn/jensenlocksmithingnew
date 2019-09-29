@@ -46,6 +46,19 @@ PageContent.create({
   body: "Do you only have one key for your vehicle? What if you lose that one? We can help! Most vehicles, especially model years 2000 and newer, have keys with electronic chips built in.\n\n These chips are programmed to 'talk' to your car and let it know this is a valid key and can start the car. The upside to these keys - much better security. The downside - they can be expensive! If you lose that last key, it adds a lot to the expense of producing a new key. It could as much as double the cost."
 })
 
+puts "Creating Page Images"
+
+# automotive_side_image2_path = File.join(Rails.root, 'app', 'assets', 'images', 'automotive', 'general_van.jpg')
+# cloud_automotive_side_2 = Cloudinary::Uploader.upload(automotive_side_image2_path)
+PageImage.create!({
+  page: "automotive",
+  name: "automotive-side-2",
+  url: "https://res.cloudinary.com/dtvsv3vni/image/upload/v1569734998/r9tgbgae47m7ktb2f9p2.jpg",
+  description: "Jensen Locksmithing Van",
+  alt_text: "Jensen Locksmithing Van",
+  default: true
+})
+
 puts "Page Content Created"
 puts "-"*80
 puts "Done"
