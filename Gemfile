@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'bundler', "~>1.0"
 gem 'rails', '>= 5.0.0.rc1', '< 5.1'
 gem 'pg'
 # Use Puma as the app server
@@ -14,7 +15,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -36,6 +36,7 @@ gem 'annotate', '~> 2.7', '>= 2.7.1' # Annotates Rails/ActiveRecord Models, rout
 
 gem 'sitemap_generator', '~> 5.2' # SitemapGenerator is a framework-agnostic XML Sitemap generator written in Ruby with automatic Rails integration. It supports Video, News, Image, Geo, Mobile, PageMap and Alternate Links sitemap extensions and includes Rake tasks for managing your sitemaps, as well as many other great features.
 gem 'meta-tags', '~> 2.4' # Search Engine Optimization (SEO) plugin for Ruby on Rails applications.
+gem 'cloudinary', '~> 1.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
