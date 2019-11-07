@@ -39,6 +39,7 @@ Rails.application.routes.draw do
     resources :page_contents
 
     get "automotive", to: "pages#automotive"
+    get "automotiveimages", to: "page_images#automotive"
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
