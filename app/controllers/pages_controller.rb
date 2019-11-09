@@ -4,48 +4,57 @@
 # Recommended title tag length: up to 70 characters, 10 words.
 class PagesController < ApplicationController
   def home
-    @page_title       = 'Locked Out? 24/7 Fast Reliable Locksmith Serving Southern Utah'
-    @page_keywords    = 'locked out, locksmith, fast, cheap, reliable, 24/7, St. George, Hurricane, Springdale, La Verkin, Zion, Kanab, Fredionia'
-    @page_description = 'Locked out of your house or car? Need a re-key? We are a fast, family owned and afforable Locksmithing company serving St. George & Washington County'
+    @page_title       = 'Jensen Locksmithing 24 hour Locksmith'
+    @page_keywords    = 'St. George, Hurricane, Springdale, La Verkin, Zion'
+    @page_description = 'Locked out - affordable 24 hour emergency locksmith'
   end
 
   def residential
-    @page_title       = '24/7 Fast Residential Locksmith Serving Southern Utah'
-    @page_keywords    = 'rekey, change locks, fast, cheap, reliable, 24/7, St. George, Hurricane, Springdale'
-    @page_description = 'We are a fast, afforable Locksmithing company serving St. George, and Washington County'
+    @page_title       = 'Jensen Locksmithing Resedential Locksmith'
+    @page_keywords    = 'rekey, change locks, fast, cheap, reliable'
+    @page_description = 'Rekeying and servicing Homes in St George Southern Utah'
   end
 
   def commercial
-    @page_title       = '24/7 Fast Residential Locksmith Serving Southern Utah'
-    @page_keywords    = 'rekey, business locksmith, commercial, change locks, fast, cheap, reliable, 24/7, St. George, Hurricane, Springdale'
-    @page_description = 'We are a fast, afforable Locksmithing company serving St. George, and Washington County'
+    @page_title       = 'Jensen Locksmithing Commercial Locksmith'
+    @page_keywords    = 'rekey, business locksmith, commercial, reliable, affordable'
+    @page_description = 'We service all commerical companies in Southern Utah'
   end
 
   def contact
+    @page_title       = 'Jensen Locksmithing - Contact us'
+    @page_keywords    = 'address, phone number, reviews'
+    @page_description = 'Contact us'
   end
 
   def contact_form
+    @page_title       = 'Jensen Locksmithing - Contact us'
+    @page_keywords    = 'address, phone number, reviews'
+    @page_description = 'Contact us'
     ContactFormMailer.contact_form(params).deliver
     flash[:notice] = "Your message has been sent successfully"
     render "contact"
   end
 
   def blog
-    @blog_posts = BlogPost.all.order(created_at: "desc")
+    @page_title       = 'Jensen Locksmithing - Blog Posts'
+    @page_keywords    = 'address, phone number, reviews, blog'
+    @page_description = 'Blog Posts'
+    @blog_posts = BlogPost.all.order(created_at: :desc)
   end
 
   def automotive
-    @page_title       = 'Locked Out? 24/7 Fast Locksmith Serving Southern Utah'
-    @page_keywords    = 'locked out, fast, cheap, rekey, 24/7, St. George, Hurricane, Springdale'
-    @page_description = 'Locked out of your house or car? Need a re-key? We are a fast, afforable Locksmithing company serving St. George, and Washington County'
+    @page_title       = 'Jensen Locksmithing - Car lockouts, emergency service'
+    @page_keywords    = 'locked out, fast, cheap, 24 hour, local, cheap'
+    @page_description = 'Locked out of your vehicle? Jensen Locksmithing helps'
 
     @main_text = PageContent.where(page: 'automotive', content_name: 'main_text').first
   end
 
   def automotive_st_george
-    @page_title       = 'Locked Out? 24/7 Fast Locksmith Serving St. George, Santa Clara & more'
-    @page_keywords    = 'locked out, locksmith, fast, cheap, rekey, 24/7, St. George, Hurricane, Springdale'
-    @page_description = 'Locked out of your house or car? Need a New Car Remote? We are a fast, afforable Locksmithing company serving St. George & Surrounding Areas'
+    @page_title       = 'Jensen Locksmithing - Car lockouts rekeys, St. George'
+    @page_keywords    = 'St. George Utah rekeys, key fovs, affordable'
+    @page_description = 'Locked out or need a rekey, we are fast and reliable'
 
     @bottom_text1 = PageContent.where(page: 'automotive', content_name: "Bottom Text 1").first
     @bottom_text2 = PageContent.where(page: 'automotive', content_name: "Bottom Text 2").first
@@ -53,9 +62,9 @@ class PagesController < ApplicationController
   end
 
   def automotive_springdale
-    @page_title       = 'Locked Out? 24/7 Locksmith Serving Virgin, Springdale, Zion & more'
-    @page_keywords    = 'locked out, locksmith, fast, cheap, rekey, 24/7, St. George, Hurricane, Springdale'
-    @page_description = 'Locked out of your house or car? Need a New Car Remote?? We are a fast, afforable Locksmithing company serving Sprindale & Surrounding Areas'
+    @page_title       = 'Jensen Locksmithing - Car lockouts rekeys 24 hour'
+    @page_keywords    = 'locked out, emergency, locksmith, Zion, Springdale'
+    @page_description = 'Locked out of your car We service Zion and Springdale'
 
     @bottom_text1 = PageContent.where(page: 'automotive', content_name: "Bottom Text 1").first
     @bottom_text2 = PageContent.where(page: 'automotive', content_name: "Bottom Text 2").first
@@ -63,9 +72,9 @@ class PagesController < ApplicationController
   end
 
   def automotive_hurricane
-    @page_title       = 'Locked Out? 24/7 Locksmith Serving Hurricane, Laverkin, Leeds & more'
-    @page_keywords    = 'locked out, locksmith, automotive, 24/7, St. George, rekey, hurricane, laverkin, toquerville'
-    @page_description = 'Locked out of your house or car? Need a new Car Remote? We are a fast, afforable Locksmithing company serving Hurricane & Surrounding Areas'
+    @page_title       = 'Jensen Locksmithing - Car lockouts rekeys 24 hour Hurricane'
+    @page_keywords    = 'locked out, locksmith, automotive, hurricane utah'
+    @page_description = 'Locked out of your car We service Hurricane to Leeds'
 
     @bottom_text1 = PageContent.where(page: 'automotive', content_name: "Bottom Text 1").first
     @bottom_text2 = PageContent.where(page: 'automotive', content_name: "Bottom Text 2").first
@@ -73,9 +82,9 @@ class PagesController < ApplicationController
   end
 
   def automotive_kanab
-    @page_title       = 'Locked Out? 24/7 Locksmith Serving Kanab, Fredonia, Rockville & more'
-    @page_keywords    = 'locked out, locksmith, fast, cheap, automotive, 24/7, St. George, rekey, kanab, fredonia'
-    @page_description = 'Locked out of your house or car? Need a New Car Remote? We are a fast, afforable Locksmithing company serving St. George, and Washington County'
+    @page_title       = 'Jensen Locksmithing - Car lockouts rekeys 24 hour Kanab'
+    @page_keywords    = 'locked out, locksmith, automotive, Fredonia AZ'
+    @page_description = 'Extra cost emergency service to rescue you'
 
     @bottom_text1 = PageContent.where(page: 'automotive', content_name: "Bottom Text 1").first
     @bottom_text2 = PageContent.where(page: 'automotive', content_name: "Bottom Text 2").first

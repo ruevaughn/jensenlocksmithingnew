@@ -1,0 +1,3 @@
+# config/initializers/rack_lock.rb
+
+Rails.application.config.middleware.insert_before 0, Rack::Lock

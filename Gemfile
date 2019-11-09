@@ -5,7 +5,7 @@ gem 'pg'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0.rc1', '< 5.1'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -30,12 +30,11 @@ gem 'bootstrap-social-rails', '~> 4.12' # https://lipis.github.io/bootstrap-soci
 gem 'font-awesome-rails'
 
 gem 'devise', '~> 4.2'
-gem 'gretel', '~> 3.0', '>= 3.0.8' # Breadcrumbs
+gem 'gretel' # Breadcrumbs
 
-gem 'annotate', '~> 2.7', '>= 2.7.1' # Annotates Rails/ActiveRecord Models, routes, fixtures, and others based on the database schema.
 
-gem 'sitemap_generator', '~> 5.2' # SitemapGenerator is a framework-agnostic XML Sitemap generator written in Ruby with automatic Rails integration. It supports Video, News, Image, Geo, Mobile, PageMap and Alternate Links sitemap extensions and includes Rake tasks for managing your sitemaps, as well as many other great features.
-gem 'meta-tags', '~> 2.4' # Search Engine Optimization (SEO) plugin for Ruby on Rails applications.
+gem 'meta-tags' # Search Engine Optimization (SEO) plugin for Ruby on Rails applications.
+gem 'sitemap_generator' # SitemapGenerator is a framework-agnostic XML Sitemap generator written in Ruby with automatic Rails integration. It supports Video, News, Image, Geo, Mobile, PageMap and Alternate Links sitemap extensions and includes Rake tasks for managing your sitemaps, as well as many other great features.
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -47,6 +46,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+gem 'annotate' # Annotates Rails/ActiveRecord Models, routes, fixtures, and others based on the database schema.
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
