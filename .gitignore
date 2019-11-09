@@ -24,3 +24,6 @@
 # TODO: FIGURE OUT ENV VARIABLES
 
 config/local_env.yml
+
+# macOS Files
+.DS_Store
